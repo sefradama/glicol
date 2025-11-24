@@ -145,20 +145,20 @@ fn seq() {
             "o",
             vec![Component::Seq(Seq {
                 events: vec![
-                    (0., NumberOrRef::Number(60.)),
-                    (1., NumberOrRef::Number(1000.)),
-                    (2., NumberOrRef::Number(1010.)),
-                    (2.75, NumberOrRef::Number(10.)),
-                    (3.2, NumberOrRef::Number(1010.)),
-                    (3.6, NumberOrRef::Number(1011.)),
-                    (4., NumberOrRef::Number(1.)),
-                    (4.5, NumberOrRef::Number(1.)),
-                    (5., NumberOrRef::Ref("~a")),
-                    (5.2, NumberOrRef::Number(12.)),
-                    (5.6, NumberOrRef::Number(13.)),
-                    (6., NumberOrRef::Ref("~r")),
-                    (6.5, NumberOrRef::Number(4.)),
-                    (7., NumberOrRef::Number(4.))
+                    (0., UsizeOrRef::Usize(60)),
+                    (0.125, UsizeOrRef::Usize(1000)),
+                    (0.25, UsizeOrRef::Usize(1010)),
+                    (0.34375, UsizeOrRef::Usize(10)),
+                    (0.4, UsizeOrRef::Usize(1010)),
+                    (0.45, UsizeOrRef::Usize(1011)),
+                    (0.5, UsizeOrRef::Usize(1)),
+                    (0.5625, UsizeOrRef::Usize(1)),
+                    (0.625, UsizeOrRef::Ref("~a")),
+                    (0.65, UsizeOrRef::Usize(12)),
+                    (0.7, UsizeOrRef::Usize(13)),
+                    (0.75, UsizeOrRef::Ref("~r")),
+                    (0.8125, UsizeOrRef::Usize(4)),
+                    (0.875, UsizeOrRef::Usize(4))
                 ]
             })]
         )])
